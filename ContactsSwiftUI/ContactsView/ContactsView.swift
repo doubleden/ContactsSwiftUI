@@ -8,11 +8,22 @@
 import SwiftUI
 
 struct ContactsView: View {
+    
+    let persons: [Person]
+    
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        NavigationStack {
+            List(persons) { person in
+                NavigationLink(person.fullName) {
+                    ContactDetailsView()
+                }
+            }
+            .listStyle(.plain)
+        .navigationTitle("Contact List")
+        }
     }
 }
 
 #Preview {
-    ContactsView()
+    ContactsView(persons: Person.getPersons())
 }
