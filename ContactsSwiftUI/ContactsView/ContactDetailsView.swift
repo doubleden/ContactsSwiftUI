@@ -13,7 +13,12 @@ struct ContactDetailsView: View {
     var body: some View {
         List {
             ContactImageRowView(systemImage: "person.fill")
-            ContactDetailsRowView(person: person)
+            
+            VStack(alignment: .leading, spacing: 20) {
+                Label(person.phone, systemImage: "phone")
+                Label(person.email, systemImage: "tray")
+            }
+            .tint(.blue)
         }
         .navigationTitle(person.fullName)
     }

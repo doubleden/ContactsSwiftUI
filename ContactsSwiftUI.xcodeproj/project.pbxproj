@@ -16,7 +16,6 @@
 		05697B692BE659BD003FFD2D /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05697B682BE659BD003FFD2D /* Person.swift */; };
 		05697B6B2BE659E6003FFD2D /* DataStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05697B6A2BE659E6003FFD2D /* DataStore.swift */; };
 		05697B6D2BE66277003FFD2D /* ContactDetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05697B6C2BE66277003FFD2D /* ContactDetailsView.swift */; };
-		05697B702BE664DA003FFD2D /* ContactDetailsRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05697B6F2BE664DA003FFD2D /* ContactDetailsRowView.swift */; };
 		05697B722BE66B8C003FFD2D /* ContactImageRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05697B712BE66B8C003FFD2D /* ContactImageRowView.swift */; };
 		05697B772BE67207003FFD2D /* NumbersView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05697B762BE67207003FFD2D /* NumbersView.swift */; };
 		05697B792BE67213003FFD2D /* NumbersViewViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05697B782BE67213003FFD2D /* NumbersViewViewModel.swift */; };
@@ -33,7 +32,6 @@
 		05697B682BE659BD003FFD2D /* Person.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Person.swift; sourceTree = "<group>"; };
 		05697B6A2BE659E6003FFD2D /* DataStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataStore.swift; sourceTree = "<group>"; };
 		05697B6C2BE66277003FFD2D /* ContactDetailsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactDetailsView.swift; sourceTree = "<group>"; };
-		05697B6F2BE664DA003FFD2D /* ContactDetailsRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactDetailsRowView.swift; sourceTree = "<group>"; };
 		05697B712BE66B8C003FFD2D /* ContactImageRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactImageRowView.swift; sourceTree = "<group>"; };
 		05697B762BE67207003FFD2D /* NumbersView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NumbersView.swift; sourceTree = "<group>"; };
 		05697B782BE67213003FFD2D /* NumbersViewViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NumbersViewViewModel.swift; sourceTree = "<group>"; };
@@ -119,7 +117,6 @@
 		05697B6E2BE6649F003FFD2D /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				05697B6F2BE664DA003FFD2D /* ContactDetailsRowView.swift */,
 				05697B712BE66B8C003FFD2D /* ContactImageRowView.swift */,
 			);
 			path = Views;
@@ -213,7 +210,6 @@
 				05697B6B2BE659E6003FFD2D /* DataStore.swift in Sources */,
 				05697B552BE658BD003FFD2D /* TabBarView.swift in Sources */,
 				05697B722BE66B8C003FFD2D /* ContactImageRowView.swift in Sources */,
-				05697B702BE664DA003FFD2D /* ContactDetailsRowView.swift in Sources */,
 				05697B532BE658BD003FFD2D /* ContactsSwiftUIApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
