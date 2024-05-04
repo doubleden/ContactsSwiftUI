@@ -8,11 +8,17 @@
 import SwiftUI
 
 struct ContactDetailsView: View {
+    let person: Person
+    
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        List {
+            ContactImageRowView(systemImage: "person.fill")
+            ContactDetailsRowView(person: person)
+        }
+        .navigationTitle(person.fullName)
     }
 }
 
 #Preview {
-    ContactDetailsView()
+    ContactDetailsView(person: Person.getPersons().first!)
 }

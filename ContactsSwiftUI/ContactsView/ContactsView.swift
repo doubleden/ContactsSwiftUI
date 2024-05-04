@@ -15,11 +15,12 @@ struct ContactsView: View {
         NavigationStack {
             List(persons) { person in
                 NavigationLink(person.fullName) {
-                    ContactDetailsView()
+                    ContactDetailsView(person: person)
+                        
                 }
             }
             .listStyle(.plain)
-        .navigationTitle("Contact List")
+            .navigationTitle("Contact List")
         }
     }
 }
