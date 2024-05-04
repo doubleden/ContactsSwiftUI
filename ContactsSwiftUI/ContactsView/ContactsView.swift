@@ -8,8 +8,7 @@
 import SwiftUI
 
 struct ContactsView: View {
-    
-    let contactsViewVM = ContactsViewViewModel()
+    @Environment(ContactsViewViewModel.self) var contactsViewVM
     
     var body: some View {
         NavigationStack {
@@ -28,4 +27,5 @@ struct ContactsView: View {
 
 #Preview {
     ContactsView()
+        .environment(ContactsViewViewModel())
 }
