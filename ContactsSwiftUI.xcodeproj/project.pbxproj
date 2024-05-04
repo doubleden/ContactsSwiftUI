@@ -53,6 +53,9 @@
 			children = (
 				05697B522BE658BD003FFD2D /* ContactsSwiftUIApp.swift */,
 				05697B542BE658BD003FFD2D /* ContentView.swift */,
+				05697B632BE6594B003FFD2D /* ContactsView */,
+				05697B612BE658E9003FFD2D /* Models */,
+				05697B622BE658F1003FFD2D /* Services */,
 				05697B562BE658BE003FFD2D /* Assets.xcassets */,
 				05697B582BE658BE003FFD2D /* Preview Content */,
 			);
@@ -65,6 +68,27 @@
 				05697B592BE658BE003FFD2D /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		05697B612BE658E9003FFD2D /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		05697B622BE658F1003FFD2D /* Services */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		05697B632BE6594B003FFD2D /* ContactsView */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ContactsView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
