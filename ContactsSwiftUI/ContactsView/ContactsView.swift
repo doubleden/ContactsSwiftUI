@@ -9,11 +9,11 @@ import SwiftUI
 
 struct ContactsView: View {
     
-    let persons: [Person]
+    let contactsViewVM = ContactsViewViewModel()
     
     var body: some View {
         NavigationStack {
-            List(persons) { person in
+            List(contactsViewVM.persons) { person in
                 NavigationLink(person.fullName) {
                     ContactDetailsView(person: person)
                         
@@ -21,10 +21,11 @@ struct ContactsView: View {
             }
             .listStyle(.plain)
             .navigationTitle("Contact List")
+            
         }
     }
 }
 
 #Preview {
-    ContactsView(persons: Person.getPersons())
+    ContactsView()
 }

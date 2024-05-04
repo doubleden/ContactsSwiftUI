@@ -18,6 +18,7 @@
 		05697B6D2BE66277003FFD2D /* ContactDetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05697B6C2BE66277003FFD2D /* ContactDetailsView.swift */; };
 		05697B702BE664DA003FFD2D /* ContactDetailsRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05697B6F2BE664DA003FFD2D /* ContactDetailsRowView.swift */; };
 		05697B722BE66B8C003FFD2D /* ContactImageRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05697B712BE66B8C003FFD2D /* ContactImageRowView.swift */; };
+		05697B742BE66D66003FFD2D /* BackButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05697B732BE66D66003FFD2D /* BackButtonView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -33,6 +34,7 @@
 		05697B6C2BE66277003FFD2D /* ContactDetailsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactDetailsView.swift; sourceTree = "<group>"; };
 		05697B6F2BE664DA003FFD2D /* ContactDetailsRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactDetailsRowView.swift; sourceTree = "<group>"; };
 		05697B712BE66B8C003FFD2D /* ContactImageRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactImageRowView.swift; sourceTree = "<group>"; };
+		05697B732BE66D66003FFD2D /* BackButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackButtonView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -116,6 +118,7 @@
 			children = (
 				05697B6F2BE664DA003FFD2D /* ContactDetailsRowView.swift */,
 				05697B712BE66B8C003FFD2D /* ContactImageRowView.swift */,
+				05697B732BE66D66003FFD2D /* BackButtonView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -191,6 +194,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				05697B672BE659A8003FFD2D /* ContactsViewViewModel.swift in Sources */,
+				05697B742BE66D66003FFD2D /* BackButtonView.swift in Sources */,
 				05697B652BE65995003FFD2D /* ContactsView.swift in Sources */,
 				05697B692BE659BD003FFD2D /* Person.swift in Sources */,
 				05697B6D2BE66277003FFD2D /* ContactDetailsView.swift in Sources */,
