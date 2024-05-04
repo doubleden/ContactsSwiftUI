@@ -11,16 +11,12 @@ struct ContactsView: View {
     @Environment(ContactsViewViewModel.self) var contactsViewVM
     
     var body: some View {
-        NavigationStack {
-            List(contactsViewVM.persons) { person in
-                NavigationLink(person.fullName) {
-                    ContactDetailsView(person: person)
-                        
-                }
+        List(contactsViewVM.persons) { person in
+            NavigationLink(person.fullName) {
+                ContactDetailsView(person: person)
             }
-            .listStyle(.plain)
-            .navigationTitle("Contact List")
         }
+        .listStyle(.plain)
     }
 }
 

@@ -11,16 +11,13 @@ struct NumbersView: View {
     @Environment(NumbersViewViewModel.self) var numbersViewVM
     
     var body: some View {
-        NavigationStack {
-            List(numbersViewVM.persons) { person in
-                Section(person.fullName) {
-                    Label(person.phone, systemImage: "phone")
-                    Label(person.email, systemImage: "tray")
-                }
+        List(numbersViewVM.persons) { person in
+            Section(person.fullName) {
+                Label(person.phone, systemImage: "phone")
+                Label(person.email, systemImage: "tray")
             }
-            .listStyle(.plain)
-            .navigationTitle("Contact List")
         }
+        .listStyle(.plain)
     }
 }
 

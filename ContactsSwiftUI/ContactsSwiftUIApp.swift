@@ -14,7 +14,7 @@ struct ContactsSwiftUIApp: App {
     
     var body: some Scene {
         WindowGroup {
-            TabBarView()
+            RootView()
                 .environment(contactsViewVM)
                 .environment(numbersViewVM)
         }
