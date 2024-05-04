@@ -10,11 +10,13 @@ import SwiftUI
 @main
 struct ContactsSwiftUIApp: App {
     @State var contactsViewVM = ContactsViewViewModel()
+    @State var numbersViewVM = NumbersViewViewModel()
     
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            TabBarView()
                 .environment(contactsViewVM)
+                .environment(numbersViewVM)
         }
     }
 }

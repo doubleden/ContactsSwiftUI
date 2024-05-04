@@ -1,5 +1,5 @@
 //
-//  ContentView.swift
+//  TabBarView.swift
 //  ContactsSwiftUI
 //
 //  Created by Denis Denisov on 4/5/24.
@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct ContentView: View {
+struct TabBarView: View {
     var body: some View {
         TabView {
             ContactsView()
@@ -15,11 +15,17 @@ struct ContentView: View {
                     Image(systemName: "person.2.fill")
                     Text("Contacts")
                 }
+            NumbersView()
+                .tabItem {
+                    Image(systemName: "phone")
+                    Text("Numbers")
+                }
         }
     }
 }
 
 #Preview {
-    ContentView()
+    TabBarView()
         .environment(ContactsViewViewModel())
+        .environment(NumbersViewViewModel())
 }

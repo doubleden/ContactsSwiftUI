@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		05697B532BE658BD003FFD2D /* ContactsSwiftUIApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05697B522BE658BD003FFD2D /* ContactsSwiftUIApp.swift */; };
-		05697B552BE658BD003FFD2D /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05697B542BE658BD003FFD2D /* ContentView.swift */; };
+		05697B552BE658BD003FFD2D /* TabBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05697B542BE658BD003FFD2D /* TabBarView.swift */; };
 		05697B572BE658BE003FFD2D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 05697B562BE658BE003FFD2D /* Assets.xcassets */; };
 		05697B5A2BE658BE003FFD2D /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 05697B592BE658BE003FFD2D /* Preview Assets.xcassets */; };
 		05697B652BE65995003FFD2D /* ContactsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05697B642BE65995003FFD2D /* ContactsView.swift */; };
@@ -18,13 +18,14 @@
 		05697B6D2BE66277003FFD2D /* ContactDetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05697B6C2BE66277003FFD2D /* ContactDetailsView.swift */; };
 		05697B702BE664DA003FFD2D /* ContactDetailsRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05697B6F2BE664DA003FFD2D /* ContactDetailsRowView.swift */; };
 		05697B722BE66B8C003FFD2D /* ContactImageRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05697B712BE66B8C003FFD2D /* ContactImageRowView.swift */; };
-		05697B742BE66D66003FFD2D /* BackButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05697B732BE66D66003FFD2D /* BackButtonView.swift */; };
+		05697B772BE67207003FFD2D /* NumbersView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05697B762BE67207003FFD2D /* NumbersView.swift */; };
+		05697B792BE67213003FFD2D /* NumbersViewViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05697B782BE67213003FFD2D /* NumbersViewViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		05697B4F2BE658BD003FFD2D /* ContactsSwiftUI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ContactsSwiftUI.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		05697B522BE658BD003FFD2D /* ContactsSwiftUIApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactsSwiftUIApp.swift; sourceTree = "<group>"; };
-		05697B542BE658BD003FFD2D /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		05697B542BE658BD003FFD2D /* TabBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarView.swift; sourceTree = "<group>"; };
 		05697B562BE658BE003FFD2D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		05697B592BE658BE003FFD2D /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		05697B642BE65995003FFD2D /* ContactsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactsView.swift; sourceTree = "<group>"; };
@@ -34,7 +35,8 @@
 		05697B6C2BE66277003FFD2D /* ContactDetailsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactDetailsView.swift; sourceTree = "<group>"; };
 		05697B6F2BE664DA003FFD2D /* ContactDetailsRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactDetailsRowView.swift; sourceTree = "<group>"; };
 		05697B712BE66B8C003FFD2D /* ContactImageRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactImageRowView.swift; sourceTree = "<group>"; };
-		05697B732BE66D66003FFD2D /* BackButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackButtonView.swift; sourceTree = "<group>"; };
+		05697B762BE67207003FFD2D /* NumbersView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NumbersView.swift; sourceTree = "<group>"; };
+		05697B782BE67213003FFD2D /* NumbersViewViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NumbersViewViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -68,9 +70,10 @@
 			isa = PBXGroup;
 			children = (
 				05697B522BE658BD003FFD2D /* ContactsSwiftUIApp.swift */,
-				05697B542BE658BD003FFD2D /* ContentView.swift */,
+				05697B542BE658BD003FFD2D /* TabBarView.swift */,
 				05697B6E2BE6649F003FFD2D /* Views */,
 				05697B632BE6594B003FFD2D /* ContactsView */,
+				05697B752BE671F1003FFD2D /* NumbersView */,
 				05697B612BE658E9003FFD2D /* Models */,
 				05697B622BE658F1003FFD2D /* Services */,
 				05697B562BE658BE003FFD2D /* Assets.xcassets */,
@@ -118,9 +121,17 @@
 			children = (
 				05697B6F2BE664DA003FFD2D /* ContactDetailsRowView.swift */,
 				05697B712BE66B8C003FFD2D /* ContactImageRowView.swift */,
-				05697B732BE66D66003FFD2D /* BackButtonView.swift */,
 			);
 			path = Views;
+			sourceTree = "<group>";
+		};
+		05697B752BE671F1003FFD2D /* NumbersView */ = {
+			isa = PBXGroup;
+			children = (
+				05697B762BE67207003FFD2D /* NumbersView.swift */,
+				05697B782BE67213003FFD2D /* NumbersViewViewModel.swift */,
+			);
+			path = NumbersView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -193,13 +204,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				05697B792BE67213003FFD2D /* NumbersViewViewModel.swift in Sources */,
 				05697B672BE659A8003FFD2D /* ContactsViewViewModel.swift in Sources */,
-				05697B742BE66D66003FFD2D /* BackButtonView.swift in Sources */,
+				05697B772BE67207003FFD2D /* NumbersView.swift in Sources */,
 				05697B652BE65995003FFD2D /* ContactsView.swift in Sources */,
 				05697B692BE659BD003FFD2D /* Person.swift in Sources */,
 				05697B6D2BE66277003FFD2D /* ContactDetailsView.swift in Sources */,
 				05697B6B2BE659E6003FFD2D /* DataStore.swift in Sources */,
-				05697B552BE658BD003FFD2D /* ContentView.swift in Sources */,
+				05697B552BE658BD003FFD2D /* TabBarView.swift in Sources */,
 				05697B722BE66B8C003FFD2D /* ContactImageRowView.swift in Sources */,
 				05697B702BE664DA003FFD2D /* ContactDetailsRowView.swift in Sources */,
 				05697B532BE658BD003FFD2D /* ContactsSwiftUIApp.swift in Sources */,
