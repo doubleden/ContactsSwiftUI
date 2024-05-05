@@ -12,7 +12,7 @@ struct ContactDetailsView: View {
     
     var body: some View {
         List {
-            ContactImageRowView(systemImage: "person.fill")
+            ContactImageView(systemImage: "person.fill")
             
             VStack(alignment: .leading, spacing: 20) {
                 Label(person.phone, systemImage: "phone")

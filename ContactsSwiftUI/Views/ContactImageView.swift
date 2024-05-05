@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct ContactImageRowView: View {
+struct ContactImageView: View {
     let systemImage: String
     
     var body: some View {
@@ -24,5 +24,5 @@ struct ContactImageRowView: View {
 }
 
 #Preview {
-    ContactImageRowView(systemImage: "person.fill")
+    ContactImageView(systemImage: "person.fill")
 }
