@@ -8,16 +8,18 @@
 import SwiftUI
 
 struct RootView: View {
+    private let persons = Person.getPersons()
+    
     var body: some View {
         NavigationStack {
             TabView {
-                ContactsView()
+                ContactsView(persons: persons)
                     .tabItem {
                         Image(systemName: "person.2.fill")
                         Text("Contacts")
                     }
                 
-                NumbersView()
+                NumbersView(persons: persons)
                     .tabItem {
                         Image(systemName: "phone")
                         Text("Numbers")
@@ -30,6 +32,4 @@ struct RootView: View {
 
 #Preview {
     RootView()
-        .environment(ContactsViewViewModel())
-        .environment(NumbersViewViewModel())
 }

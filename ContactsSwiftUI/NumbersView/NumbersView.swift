@@ -8,10 +8,10 @@
 import SwiftUI
 
 struct NumbersView: View {
-    @Environment(NumbersViewViewModel.self) var numbersViewVM
+    let persons: [Person]
     
     var body: some View {
-        List(numbersViewVM.persons) { person in
+        List(persons) { person in
             Section(person.fullName) {
                 Label(person.phone, systemImage: "phone")
                 Label(person.email, systemImage: "tray")
@@ -22,6 +22,5 @@ struct NumbersView: View {
 }
 
 #Preview {
-    NumbersView()
-        .environment(NumbersViewViewModel())
+    NumbersView(persons: Person.getPersons())
 }

@@ -12,13 +12,17 @@ struct ContactDetailsView: View {
     
     var body: some View {
         List {
-            ContactImageView(systemImage: "person.fill")
-            
+            HStack {
+                Spacer()
+                Image(systemName: "person.fill")
+                    .resizable()
+                .frame(width: 150, height: 150)
+                Spacer()
+            }
             VStack(alignment: .leading, spacing: 20) {
                 Label(person.phone, systemImage: "phone")
                 Label(person.email, systemImage: "tray")
             }
-            .tint(.blue)
         }
         .navigationTitle(person.fullName)
     }
